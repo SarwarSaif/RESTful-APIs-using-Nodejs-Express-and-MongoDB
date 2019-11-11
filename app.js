@@ -10,5 +10,11 @@ app.get('/', (req, res) => {
     res.send('Home route');
 });
 
+// Post Route
+app.get('/posts', (req, res) => {
+    res.send('We are on posts');
+})
+
 // To listen from the server
 app.listen(3000);
+
