@@ -3,6 +3,8 @@ const express = require('express');
 // Execute Express
 const app = express();
 
+mongodb+srv://Saif001:try007@cluster0-bzdu4.mongodb.net/test?retryWrites=true&w=majority
+
 // Creating Routes
 
 // Home Route
