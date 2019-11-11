@@ -1,0 +1,23 @@
+{
+  "name": "restful-apis-using-nodejs-express-and-mongodb",
+  "version": "1.0.0",
+  "description": "This API will be helpful for building a simple blog with all the useful methods(GET,POST,DELETE,PATCH).\r Rest apis help us decouple our backend code from our front end so we can use it across multiple application (mobile apps, web apps, etc).",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SarwarSaif/RESTful-APIs-using-Nodejs-Express-and-MongoDB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SarwarSaif/RESTful-APIs-using-Nodejs-Express-and-MongoDB/issues"
+  },
+  "homepage": "https://github.com/SarwarSaif/RESTful-APIs-using-Nodejs-Express-and-MongoDB#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4"
+  }
+}
