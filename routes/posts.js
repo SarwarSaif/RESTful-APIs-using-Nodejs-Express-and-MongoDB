@@ -10,7 +10,19 @@ router.get('/', (req, res) => {
 
 // Use the post model
 router.post('/', (req, res)  => {
-    console.log(req.body);
+    const post = new Post({
+        title: req.body.title,
+        description: req.body.description
+    });
+
+    post.save() // Returns a promise
+        .then(data => {
+            res.json(data);
+        })
+        .catch(err => {
+            res.json({ message: 'Post Creation Falied!' });
+        });
+
 });
 
 // Exporting Router To Make It Visible To Other Files

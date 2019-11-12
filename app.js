@@ -4,8 +4,14 @@ const express = require('express');
 const app = express();
 // Import Mongoose Instance
 const mongoose = require('mongoose');
+// Import Body-parser
+const bodyParser = require('body-parser');
 // Import DotENV file 
 require('dotenv/config');
+
+// Create a middleware for body-parser to convert the response
+app.use(bodyParser.json()); // This will convert all the response
+
 
 // Creating Routes
 // Import Post Routes

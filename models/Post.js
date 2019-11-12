@@ -16,7 +16,7 @@ const PostSchema = mongoose.Schema({
         type: String,
         default: Date.now
     },
-})
+});
 
 // Export The Mongoose Model
 module.exports = mongoose.model('Posts', PostSchema);
