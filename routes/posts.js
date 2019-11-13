@@ -51,5 +51,15 @@ router.post('/', async (req, res)  => {
 
 });
 
+// Get Specific Post by ID
+router.get('/:postId', async (req, res) => {
+    try {
+        const post = await Post.findById(req.params.postId); // Wait for the promise
+        res.json(post);
+    }catch (err) {
+        res.json({message:err});
+    }
+});
+
 // Exporting Router To Make It Visible To Other Files
 module.exports = router;
