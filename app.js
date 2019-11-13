@@ -6,6 +6,8 @@ const app = express();
 const mongoose = require('mongoose');
 // Import Body-parser
 const bodyParser = require('body-parser');
+// Import CORS
+const cors = require('cors');
 // Import DotENV file 
 require('dotenv/config');
 
