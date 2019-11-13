@@ -4,8 +4,14 @@ const Post = require('../models/Post');
 
 // Post Route
 // Don't Need To Add /posts as the middleware will link it
-router.get('/', (req, res) => {
-    res.send('We are on posts');
+// Get all the posts in Async/await way
+router.get('/', async (req, res) => {
+    try {
+        const posts = await Post.find(); // Mongoose function to find the posts
+        res.json(posts);
+    } catch (err) {
+        res.json({message:err});
+    }
 })
 
 // Use the post model 
@@ -26,6 +32,7 @@ router.get('/', (req, res) => {
 //         });
 
 // });
+// This function submits a post
 // Convert this function into "Async/await"
 // to work with the promises more comfortably
 router.post('/', async (req, res)  => {
