@@ -9,6 +9,8 @@ const bodyParser = require('body-parser');
 // Import DotENV file 
 require('dotenv/config');
 
+// Create a middleware for Cross Platform support using CORS
+app.use(cors());
 // Create a middleware for body-parser to convert the response
 app.use(bodyParser.json()); // This will convert all the response
 
